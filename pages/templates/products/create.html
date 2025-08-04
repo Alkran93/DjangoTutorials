@@ -16,7 +16,7 @@
             {% endfor %}
           </ul>
           {% endif %}
-          <form method="POST" action="{% url 'form' %}">
+          <form method="POST" action="{% url 'product-create' %}">
             {% csrf_token %}
             <input type="text" class="form-control mb-2" placeholder="Enter name" name="name" value="{{form.data.name}}" />
             <input type="text" class="form-control mb-2" placeholder="Enter price" name="price" value="{{form.data.price}}" />
